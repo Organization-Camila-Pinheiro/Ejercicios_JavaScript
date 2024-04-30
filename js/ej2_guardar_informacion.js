@@ -144,25 +144,113 @@ document.write("</br>")
 
 document.write("</br> asígnale los valores de tu película favorita y muéstrala en tu página </br>")
 let movieTitle = "Attack on Titan"
-let director = "Tetsurō Araki" 
+let director = "Tetsurō Araki"
 let yaerRelease = "2013"
 let duration = "72"
-let awards = true 
+let awards = true
 
-document.write("El anime es " + movieTitle + ", el director es el " + director + ", su año de lanzamiento fue en "+ yaerRelease + " y tiene " + duration + " episodios.")
+document.write("El anime es " + movieTitle + ", el director es el " + director + ", su año de lanzamiento fue en " + yaerRelease + " y tiene " + duration + " episodios.")
 document.write("</br>")
 document.write("Tiene premios?: " + awards)
+document.write("</br>")
 
 document.write("</br> Otra película favorita </br>")
 movieTitle = "Your Name"
-director = "Makoto Shinkai" 
+director = "Makoto Shinkai"
 yaerRelease = "2015"
 duration = "93 min"
-awards = true 
+awards = true
 
-document.write("La película es " + movieTitle + ", el director es el " + director + ", su año de lanzamiento fue en "+ yaerRelease + " y tiene " + duration + " de duración .")
+document.write("La película es " + movieTitle + ", el director es el " + director + ", su año de lanzamiento fue en " + yaerRelease + " y tiene " + duration + " de duración.")
 document.write("</br>")
 document.write("Tiene premios?: " + awards)
+
+document.write("</br> Declara las siguientes variables o constantes según corresponda: </br>")
+
+let destination = "Morro de Sao Paulo"
+let country = "Brasil"
+let weather = "Tropical"
+let numberPopulation = 11.410
+let places = "playas"
+let coast =  true
+let urban = false 
+document.write("DEstino de viaje favorito fue " + destination + ", está en  " + country + ", su clima predominante es " + weather + ", tiene " + numberPopulation 
++ " habitantes y su principal atraccion son las " + places )
+document.write("</br>")
+document.write("Es un destino costero?: " + coast)
+document.write("</br>")
+document.write("Es un destino urbano?: " + urban)
+document.write("</br>")
+
+
+document.write("</br> Declara variables para guardar la siguiente información sobre una canción.</br>")
+let music = "Pra você guardei o amor"
+let singer = "Nando Reis e Ana Cañas"
+let album = "Drês"
+let yearLaunched = "2010"
+let timeDuration = "5:51"
+let video = true
+document.write("</br>")
+document.write("La canción es " + music + ", los artistas son " + singer + ", el album se llama " + album + ", fue publicado en "
++ yearLaunched + " y tiene " + timeDuration + " de duración.")
+document.write("</br>")
+document.write("Tiene videoclip?: " + video)
+
+document.write("</br>")
+document.write("</br> Otra canción.</br>")
+
+music = "Barquinho de Papel"
+singer = "AnaVitoria"
+album = "Trilhas"
+yearLaunched = "2022"
+timeDuration = "3:48"
+video = true
+
+document.write("</br>")
+document.write("La canción es " + music + ", los artistas son " + singer + ", el album se llama " + album + ", fue publicado en "
++ yearLaunched + " y tiene " + timeDuration + " de duración.")
+document.write("</br>")
+document.write("Tiene videoclip?: " + video)
+document.write("</br>")
+
+document.write("</br> Declara las siguientes variables o constantes según corresponda: </br>")
+
+let months = 12
+let week = 7
+let population = 70.000
+let ageSinger = 61
+let seasons = 4
+let myCity = "Vilanona i la Geltrú"
+let hoursPerDay = 24
+let priceGas = 2.78
+let numberBooks = 40
+document.write("Número de meses del año: " + months)
+document.write("</br>")
+document.write("Número de dás de la semana: "+  week )
+document.write("</br>")
+document.write("Número de habitantes en Vilanova: " + population)
+document.write("</br>")
+document.write("Edad de Nando Reis: " + ageSinger)
+document.write("</br>")
+document.write("Número de estaciones del año: " + seasons)
+document.write("</br>")
+document.write("EL nombre de mí ciudad es " + myCity)
+document.write("</br>")
+document.write("Númerod e horas del día: " + hoursPerDay)
+document.write("</br>")
+document.write("Predio de la gasolina: " + priceGas)
+document.write("</br>")
+document.write("Número de libro de que leído: " + numberBooks) 
+document.write("</br>")
+
+
+
+
+
+
+
+
+
 
 
 
