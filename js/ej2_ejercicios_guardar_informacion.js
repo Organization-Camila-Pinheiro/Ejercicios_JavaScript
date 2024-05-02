@@ -169,15 +169,16 @@ document.write("</br>");
 document.write("</br> EJERCICIO 7 __________ CONSTANTES </br>");
 document.write("</br> Declara las siguientes variables o constantes según corresponda: </br>")
 
-let months = 12;
-let week = 7;
+const months = 12;
+const week = 7;
 let population = 70.000;
 let ageSinger = 61;
-let seasons = 4;
-let myCity = "Vilanona i la Geltrú";
-let hoursPerDay = 24;
+const seasons = 4;
+const myCity = "Vilanona i la Geltrú";
+const hoursPerDay = 24;
 let priceGas = 2.78;
-let numberBooks = 40;
+let  numberBooks = 40;
+
 document.write("Número de meses del año: " + months);
 document.write("</br>");
 document.write("Número de dás de la semana: "+  week);

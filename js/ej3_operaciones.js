@@ -19,15 +19,15 @@ document.write("<br/>")
 // MULTIPLICACION DE DOS NUEMEROS
 // calcular el precio de 5 kg de manzanas
 let kgManzana = 5
-let precioManzana = 3.56
-let totalMultiplicacion = precioManzana * kgManzana 
+let precioManzana1 = 3.56
+let totalMultiplicacion = precioManzana1 * kgManzana 
 document.write("El valor de  5 kg de manzanas es: " + totalMultiplicacion)
 document.write("<br/>")
 
 //DIVISION DE DOS NUMEROS
 //calcular la mitad del precio de las manzanas
 let mitad = 2
-let totalDivision = precioManzana / mitad
+let totalDivision = precioManzana1 / mitad
 document.write("El resultado de la division del precio las manzanas por la mitad es: " + totalDivision)
 document.write("<br/>")
 
