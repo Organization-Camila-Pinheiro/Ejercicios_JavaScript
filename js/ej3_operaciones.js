@@ -58,3 +58,4 @@ numeroIntentos--
 document.write("El numero de intentos decrementados es " + numeroIntentos)
 document.write("<br/>")
 
+
