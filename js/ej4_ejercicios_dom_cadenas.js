@@ -110,5 +110,32 @@ cadenas = document.getElementById("e2fraseSinNombre");
 cadenas.innerText = "La frase original es " + presentation + " y la frase actual es " +mensaje5;
 
 
+//Crea una variable con tu nombre completo y muestralo por pantalla. A continuación, quita los espacios de la variable y muestralo por pantalla.
+
+let nombreCompleto = "Camila Pinheiro do Carmo";
+let nombreSinEspacios = nombreCompleto.replaceAll(" ", "")
+
+let fullName = document.getElementById("e3nombreSinEspacio");
+fullName.innerText = "El nombre es " + nombreCompleto + " y quitando la variable es " + nombreSinEspacios;
+
+//Crea una variable con una palabra en minuscula y muestralo por pantalla. Cambia la primera letra a mayuscula y muestrala por pantalla.
+
+let palabraTest = "barcelona";
+let primeraLetraMayuscula = palabraTest.replace(palabraTest[0], palabraTest[0].toUpperCase());
+      
+let palabraFinal = document.getElementById("e4palabra");
+palabraFinal.innerText = "El nombre original es " + palabraTest + " y el nombre alterado es " + primeraLetraMayuscula;
+
+// Crea una cadena con el texto Hola Mundo y muestralo por pantalla. Reemplaza la palabra Hola por Adios y muestralo por pantalla.
+
+let cadenaTextoHola = "Hola Mundo";
+let cadenaTextoAdios = cadenaTextoHola.replace("Hola", "Adiós");
+
+let saludo = document.getElementById("e5palabra")
+saludo.innerText = "El texto origial es " + cadenaTextoHola + " y el texto actual es " + cadenaTextoAdios;
+
+
+
+
 
 
