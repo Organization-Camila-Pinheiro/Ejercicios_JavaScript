@@ -53,3 +53,62 @@ parrafo.innerText = "La frase original es " + mensajePrincipal + " y la frase co
 
 parrafo = document.getElementById("e1fraseSinQueTal");
 parrafo.innerText = "La frase orginal es " + mensajePrincipal + " y la frase con los cambios es " + mensaje2
+
+/*Crea una variable con una frase en la que te presentes y muestrala junto con:
+
+Su longitud
+
+La posición de tu nombre
+
+La primera letra de la frase.
+
+La última letra de la frase.
+
+Muestra la frase completa en mayúscula
+
+Muestra la frase completa en minúscula
+
+Muestra la frase cambiando tu nombre por otro que elijas.
+
+Crea una nueva palabra, con la misma frase quitando tu nombre.
+
+ */
+
+let presentation = "Hola, me llamo Camila, soy una Analista QA proactiva y organizadoa con conocimientos en pruebas manuales y pruebas API.";
+let longitud2 = presentation.length;
+let posicionName = presentation.includes("Camila");
+let primeraLetra2 = presentation[0];
+let ultimaLetra2 = presentation[longitud -1];
+let mensajeMayuscula = presentation.toUpperCase();
+let mensajeMinuscula = presentation.toLowerCase();
+let otherName = "Marina"
+let mensaje4 = presentation.replace("Camila", otherName);
+let mensaje5 = presentation.replace(" me llamo Camila,", "")
+
+let cadenas = document.getElementById("e2longitud");
+cadenas.innerText = "La longitude de la frase " + presentation + " es " + longitud2;
+
+cadenas = document.getElementById("e2posicion");
+cadenas.innerText = "La posición de la palabra \"Camila\" es " + posicionName;
+
+cadenas = document.getElementById("e2letraPrimera");
+cadenas.innerText = "La primera letra de la frase es " + primeraLetra2;
+
+cadenas = document.getElementById("e2letraUltima");
+cadenas.innerText = "La ultima de la frase es " +  ultimaLetra2;
+
+cadenas = document.getElementById("e2fraseMayuscula");
+cadenas.innerText = "La frase completa con letras mayusculas: " + mensajeMayuscula;
+
+cadenas = document.getElementById("e2fraseMinuscula");
+cadenas.innerText = "La frase completa con letras minusculas: " + mensajeMinuscula;
+
+cadenas = document.getElementById("e2fraseNombre");
+cadenas.innerText = "La frase original es " + presentation + " y la frase actual es " + mensaje4;
+
+cadenas = document.getElementById("e2fraseSinNombre");
+cadenas.innerText = "La frase original es " + presentation + " y la frase actual es " +mensaje5;
+
+
+
+
