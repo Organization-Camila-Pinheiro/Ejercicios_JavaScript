@@ -18,16 +18,130 @@
         <p><a href="https://www.w3schools.com/bootstrap/bootstrap_buttons.asp">Formularios Botones </a></p>
         <p><a href="https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation">Validaciones </a></p>
         <p><a href="https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation">Validaciones Boostrap </a></p>
-        
+        <p><a href="https://developer.mozilla.org/es/docs/Glossary/Function">Funciones </a></p>
+
     </div>
     <br>
-    <div class="container mt-5">
+    <div id="contenidoEjemplos" class="container mt-5">
         <h1>Ejemplos en clase</h1>
+        <p>Podemos elegir type, id,placeholder: text de informacion que aparece dentro del recuardro del input. </p>
+        <h3>Ejemplo 1 _ Input de Tipo Texto</h3>
+        <input type="text" id="e1Texto" placeholder="Introduce tu texto">
+        <h3>Ejemplo 2 _ Input de Tipo Password</h3>
+        <input type="password" id="e2Password" placeholder="Introduce tu password">
+        <h3>Ejemplo 3 _ Input de Tipo Radio</h3>
+        <p>Permite elegir solo uno de los 3. Cada type radio debe tener el mismo name y diferente id.</p>
+        <input type="radio" id="colorRojo" name="color"> Rojo
+        <input type="radio" id="colorVerde" name="color"> Verde
+        <input type="radio" id="colorAmarillo" name="color"> Amarillo
+        <h3>Ejemplo 4 _ Input de Tipo Checkbox</h3>
+        <p>Permite elegir los que quieras, todos por ejemplo. No necessitan name</p>
+        <input type="checkbox" id="e4Acepto"> Acepto las consdiciones
+        <input type="checkbox" id="e4AceptoCookies"> Acepto las cookies
+        <h3>Ejemplo 5 _ Input de Tipo Fecha y Tipo Fecha y Hora</h3>
+        <input type="date" id="e5Fecha">
+        <input type="datetime-local" id="e5FechaHora">
+        <h3>Ejemplo 6 _ Input de Tipo e-mail</h3>
+        <input type="email" id="e6Email" placeholder="Introduce un e-mail">
+        <h3>Ejemplo 7 _ Input de Tipo Numero</h3>
+        <input type="number" id="e7Numero" placeholder="Introduce un numero">
+        <h3>Ejemplo 8 _ Select</h3>
+        <p>Select sirve para seleccionar un vaor entre varias opciones. Tiene id, que va en el select, class
+            form-select, para que tenga un estilo bonito con boostrap y options con value que es el valor de cada
+            elemento que se seleccionar .</p>
+        <select id="e8Color" class="form-select">
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+            <option value="ämarillo">Amarillo</option>
+            <option value=""></option>
+        </select>
+        <h3>Ejemplo 9 _ Botones</h3>
+        <p>Botones, puedes elegir un aclaa segun el color que quieras para el boton</p>
+        <button type="button" class="btn">Texto del Boton</button>
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-link">Link</button>
+
+        <h3>Ejemplo 10 _ Validacones de input tipo texto y estilos</h3>
+        <p>Crear un DIV con la class was-validated y poner dentro del div los elementos del formulario a validar/p>
+        <p>Por cada elemento a validar, haver un div con la clase mb-3 y dentro el elemento a validar, y un texto con a
+            clase valid-feedback y el texto de feedback valido y otro texto con la class
+            invalid-feedback y el texto de feedback invalido </p>
+
+        <div id="e9Formalario" class="was-validated">
+
+            <div class="mb-3">
+                <input type="text" id="e10Texto" placeholder="Introduce tu texto" required minlength="5" maxlength="10"
+                    class="form-control">
+                <p class="valid-feedback">El texto introducido es correcto</p>
+                <p class="invalid-feedback">El campo texto es obligatorio y debe tener entre 5 y 10 caracteres</p>
+            </div>
+
+            <div class="mb-3">
+                <input type="number" id="e10Number" placeholder="Introduce tu numero" required min="0" max="15"
+                    class="form-control">
+                <p class="valid-feedback">El número introducido es correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio y debe tener entre 0 y 15 caracteres</p>
+            </div>
+            <div class="mb-3">
+                <input type="email" id="e10Email" placeholder="Introduce tu e-mail" required minlength="0"
+                    maxlength="10" class="form-control">
+                <p class="valid-feedback">El e-mail introducido es correcto</p>
+                <p class="invalid-feedback">El campo e-mail es obligatorio y debe tener entre 0 y 10 caracteres</p>
+            </div>
+
+            <button type="button" class="btn btn-success">Guardar Texto</button>
+        </div>
+    </div>
+
+    <div id="contenidoFunciones" class="container mt-5">
+        <h1>Ejemplos en clase_ Funciones</h1>
 
     </div>
 
+    </div>
     <div id="contenidoEjercicios" class="container mt-5">
         <h2>EJERCICIOS</h2>
+        <h3>Ejercicio 1_Crea un formulario para introducir nombre, ciudad y fecha de nacimiento. </h3>
+        <div id="ejercio1Formalario" class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="ej1Nombre" placeholder="Introduce tu nombre" required minlength="1" maxlength="40"
+                    class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El nombre es obligatorio y debe tener entre 1 y 40 caracteres</p>
+            </div>
+            <div class="mb-3">
+                <input type="text" id="ej1Ciudad" placeholder="Introduce tu ciudad" required minlength="1" maxlength="40"
+                    class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El nombre de la ciudad es obligatorio y debe tener entre 1 y 40 caracteres</p>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="ej1Fecha" placeholder="Introduce la fecha" required min="1900" max="2024"
+                    class="form-control">
+                <p class="valid-feedback">La fecha es correcta</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+        </div>
+        <h3>Ejercicio 2_Crea un formulario para introducir dos numeros.</h3>
+        <div id="ejercio2Formalario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ej2PrimerNumero" placeholder="Introduce el primer numero" required
+                    class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio y acepta solamente números</p>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="ej2SegundoNumero" placeholder="Introduce el segundo numero" required
+                    class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio y acepta solamente números</p>
+            </div>
+        </div>
 
 
     </div>
