@@ -133,6 +133,7 @@
                     maxlength="40" class="form-control">
                 <p class="valid-feedback">Correcto</p>
                 <p class="invalid-feedback">El nombre es obligatorio y debe tener entre 1 y 40 caracteres</p>
+
             </div>
             <div class="mb-3">
                 <input type="text" id="ej1Ciudad" placeholder="Introduce tu ciudad" required minlength="1"
@@ -147,7 +148,9 @@
                 <p class="valid-feedback">La fecha es correcta</p>
                 <p class="invalid-feedback">El campo es obligatorio</p>
             </div>
+            <button type="button" class="btn btn-success" onclick="wellcome()">Enter</button>
         </div>
+
         <h3>Ejercicio 2_Crea un formulario para introducir dos numeros.</h3>
         <div id="ejercio2Formalario" class="was-validated">
             <div class="mb-3">
@@ -162,7 +165,9 @@
                 <p class="valid-feedback">correcto</p>
                 <p class="invalid-feedback">El campo es obligatorio y acepta solamente números</p>
             </div>
+            <button type="button" class="btn btn-success" onclick="operaciones()">Resultado</button>
         </div>
+
         <h3>Ejercicio 3_Crea un formulario para convertir monedas. El usuario debe introducir una catidad en euros.
         </h3>
         <div id="ejercio3Formalario" class="was-validated">
@@ -172,6 +177,7 @@
                 <p class="valid-feedback">correcto</p>
                 <p class="invalid-feedback">El campo es obligatorio y acepta solamente valores positivos </p>
             </div>
+            <button type="button" class="btn btn-success" onclick="conversion()">Conversion</button>
 
         </div>
         <h3>Ejercicio 4_Crea un formulario para calcular precio total de un producto.</h3>
