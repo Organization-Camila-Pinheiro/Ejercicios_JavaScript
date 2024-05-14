@@ -23,7 +23,7 @@
     </div>
     <br>
     <div id="contenidoEjemplos" class="container mt-5">
-        <h1>Ejemplos en clase</h1>
+        <h1>Ejemplos Formularios</h1>
         <p>Podemos elegir type, id,placeholder: text de informacion que aparece dentro del recuardro del input. </p>
         <h3>Ejemplo 1 _ Input de Tipo Texto</h3>
         <input type="text" id="e1Texto" placeholder="Introduce tu texto">
@@ -101,6 +101,26 @@
     <div id="contenidoFunciones" class="container mt-5">
         <h1>Ejemplos en clase_ Funciones</h1>
 
+        <h3>Ejemplo 1: Llamar a una funcion</h3>
+        <p id="funcionesEjemplo1"></p>
+        <h3>ejemplo 2: Llamar a una funcion desde un boton</h3>
+        <button type="button" class="btn btn-success" onclick="saludar()">Saludar</button>
+        <p id="funcionesEjemplo2"></p>
+        <h3>ejemplo 3: Obtener informacion de un formulario y usarlo en una funcion</h3>
+        <input type="number" id="e3Numero1" placeholder="Introduce un numero">
+        <input type="number" id="e3Numero2" placeholder="Introduce un numero a restar">
+        <button type="button" class="btn btn-success" onclick="restar()">Resultado</button>
+        <p id="funcionesEjemplo3"></p>
+        <h3>ejemplo 4: Obtener informacion de un select y usarlo en una funcion</h3>
+        <p>Elige una ciudad</p>
+        <select id="e4Ciudades" class="form-select">
+            <option value="Barcelona">Barcelona</option>
+            <option value="Malaga">Malaga</option>
+            <option value="Madrid">Madrid</option>
+            <option value=""></option>
+        </select>
+        <button type="button" class="btn btn-success" onclick="mostrarUbicacion()">Mostrar ubicacion</button>
+        <p id="e4Solucion"></p>
     </div>
 
     </div>
@@ -288,7 +308,7 @@
             <div class="mb-3">
                 <input type="text" id="ej10texto" placeholder="Introduce el nombre de tu mascota" minlength="0"
                     maxlength="100" class="form-control">
-                
+
             </div>
 
             <select id="ej5sombreros" class="form-select">Seleccione la cantidad de sombreros
