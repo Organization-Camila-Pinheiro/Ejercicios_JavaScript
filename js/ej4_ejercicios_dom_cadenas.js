@@ -76,7 +76,7 @@ Crea una nueva palabra, con la misma frase quitando tu nombre.
 
 let presentation = "Hola, me llamo Camila, soy una Analista QA proactiva y organizadoa con conocimientos en pruebas manuales y pruebas API.";
 let longitud2 = presentation.length;
-let posicionName = presentation.includes("Camila");
+let posicionName = presentation.indexOf("Camila");
 let primeraLetra2 = presentation[0];
 let ultimaLetra2 = presentation[longitud -1];
 let mensajeMayuscula = presentation.toUpperCase();
