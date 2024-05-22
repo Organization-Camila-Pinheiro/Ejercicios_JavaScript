@@ -127,7 +127,7 @@
     <div id="contenidoEjercicios" class="container mt-5">
         <h2>EJERCICIOS</h2>
         <h3>Ejercicio 1_Crea un formulario para introducir nombre, ciudad y fecha de nacimiento. </h3>
-        <div id="ejercio1Formulario" class="was-validated">
+        <form id="ejercio1Formulario" class="was-validated">
             <div class="mb-3">
                 <input type="text" id="ej1Nombre" placeholder="Introduce tu nombre" required minlength="1"
                     maxlength="40" class="form-control">
@@ -149,11 +149,11 @@
                 <p class="invalid-feedback">El campo es obligatorio y aceptan entre 1900 a 2024</p>
             </div>
             <button type="button" class="btn btn-success" onclick="welcome()">Enter</button>
-        </div>
+        </form>
         <p id="respuesta1"></p>
 
         <h3>Ejercicio 2_Crea un formulario para introducir dos numeros.</h3>
-        <div id="ejercio2Formulario" class="was-validated">
+        <form id="ejercio2Formulario" class="was-validated">
             <div class="mb-3">
                 <input type="number" id="ej2PrimerNumero" placeholder="Introduce el primer numero" required
                     class="form-control">
@@ -167,12 +167,12 @@
                 <p class="invalid-feedback">El campo es obligatorio y acepta solamente números</p>
             </div>
             <button type="button" class="btn btn-success" onclick="operaciones()">Resultado</button>
-        </div>
+        </form>
         <p id="respuesta2"></p>
 
         <h3>Ejercicio 3_Crea un formulario para convertir monedas. El usuario debe introducir una catidad en euros.
         </h3>
-        <div id="ejercio3Formulario" class="was-validated">
+        <form id="ejercio3Formulario" class="was-validated">
             <div class="mb-3">
                 <input type="number" id="ej3valor" placeholder="Introduce el valor en Euros" required min="0"
                     class="form-control">
@@ -180,7 +180,7 @@
                 <p class="invalid-feedback">El campo es obligatorio y acepta solamente valores positivos </p>
             </div>
             <button type="button" class="btn btn-success" onclick="conversion()">Conversion</button>
-        </div>
+        </form>
         <p id="respuesta3"></p>
 
         <h3>Ejercicio 4_Crea un formulario para calcular precio total de un producto.</h3>
@@ -188,7 +188,7 @@
             los campos son obligatorios. El nombre debe tener entre 3 y 20 caracteres. El precio no puede ser negativo.
             La cantidad no puede ser negativa. </p>
 
-        <div id="ejercio4Formulario" class="was-validated">
+        <form id="ejercio4Formulario" class="was-validated">
             <div class="mb-3">
                 <input type="text" id="ej4producto" placeholder="Introduce el producto" required minlength="3"
                     maxlength="20" class="form-control">
@@ -208,11 +208,11 @@
                 <p class="invalid-feedback">La cantidad es obligatoria y debe ser positiva </p>
             </div>
             <button type="button" class="btn btn-success" onclick="calcularPrecio()">Precio Total</button>
-        </div>
+        </form>
         <p id="respuesta4"></p>
 
         <h3>Ejercicio 5_Crea un formulario para elegir la talla y el color de una camiseta. </h3>
-        <div id="ejercio5Formulario" class="was-validated">
+        <form id="ejercio5Formulario" class="was-validated">
 
             <select id="ej5Color" class="form-select" style="max-width: 150px;" required>
                 <option value="rojo">Rojo</option>
@@ -231,25 +231,25 @@
                 <option value="xxl">XXL</option>
             </select>
             <button type="button" class="btn btn-success" onclick="elegirCamiseta()">Concluir compra</button>
-        </div>
+        </form>
         <p id="respuesta5"></p>
 
         <h3>Ejercicio 6_Crea un formulario para introducir la edad del usuario. </h3>
 
-        <div id="ejercio6Formulario" class="was-validated">
+        <form id="ejercio6Formulario" class="was-validated">
             <div class="mb-3">
                 <input type="number" id="ej46Edad" placeholder="Introduce tu edad" required min="1"
                     class="form-control">
                 <p class="valid-feedback">correcto</p>
                 <p class="invalid-feedback">La edad es obligatoria y debe ser positiva </p>
             </div>
-        </div>
+        </form>
 
         <h3>Ejercicio 7_Crea un formulario para mostrar información sobre un texto </h3>
         <p>Crea un elemento textArea que reciba un texto de longitud entre 10 y 100 caracteres. Debe ser obligatorio.
             Agrega validación Boostrap</p>
 
-        <div id="ejercio7Formulario" class="was-validated">
+        <form id="ejercio7Formulario" class="was-validated">
             <div class="mb-3">
                 <input type="text" id="ej6texto" placeholder="Introduce el texto" required minlength="10"
                     maxlength="100" class="form-control">
@@ -257,34 +257,34 @@
                 <p class="invalid-feedback">El campo de texto es obligatorio y debe tener entre 10 a 100 caracteres.
                 </p>
             </div>
-        </div>
+        </form>
 
         <h3>Ejercicio 8_Crea un formulario para introducir dos numeros.</h3>
 
-        <div id="ejercio8Formulario" class="was-validated">
+        <form id="ejercio8Formulario" class="was-validated">
             <div class="mb-3">
                 <input type="number" id="ej8Numero1" placeholder="Introduce la nota" required min="0" max="10"
-                    class="form-control">
+                    class="form-control" step="0.01">
                 <p class="valid-feedback">correcto</p>
                 <p class="invalid-feedback">El campo es obligatorio y acepta solamente números entre 0 a 10</p>
             </div>
             <div class="mb-3">
                 <input type="number" id="ej8Numero2" placeholder="Introduce la nota" required min="0" max="10"
-                    class="form-control">
+                    class="form-control" step="0.01">
                 <p class="valid-feedback">correcto</p>
                 <p class="invalid-feedback">El campo es obligatorio y acepta solamente números entre 0 a 10</p>
             </div>
             <div class="mb-3">
                 <input type="number" id="ej8Numero3" placeholder="Introduce la nota" required min="0" max="10"
-                    class="form-control">
+                    class="form-control" step="0.01">
                 <p class="valid-feedback">correcto</p>
                 <p class="invalid-feedback">El campo es obligatorio y acepta solamente números entre 0 a 10</p>
             </div>
 
-        </div>
+        </form>
 
         <h3>Ejercicio 9_Crea un formulario para elegir la talla y el color de una camiseta. </h3>
-        <div id="ejercio9Formulario" class="was-validated">
+        <form id="ejercio9Formulario" class="was-validated">
             <p>Seleccione</p>
 
             <select id="ej9camiseta" class="form-select">Seleccione la cantidad de camisetas
@@ -308,14 +308,14 @@
                 <option value="0">0</option>
             </select>
 
-        </div>
+        </form>
 
         <h3>Ejercicio 10_Crea un formulario para que el usuario pueda introducir el nombre de su mascota, y seleccionar
             el tipo: perro, gato, tortuga, pajaro. </h3>
         <p>Agrega 1 elemento agregar el nombre de la mascota y el tipo. Ambos pueden estar vacios (el usuario puede no
             tener mascota, o no ser de ninguno de esos tipos)</p>
 
-        <div id="ejercio7Formulario" class="was-validated">
+        <form id="ejercio7Formulario" class="was-validated">
             <div class="mb-3">
                 <input type="text" id="ej10texto" placeholder="Introduce el nombre de tu mascota" minlength="0"
                     maxlength="100" class="form-control">
@@ -330,7 +330,7 @@
                 <option value="pajaro">Pájaro</option>
                 <option value="otro">Otro</option>
             </select>
-        </div>
+        </form>
 
 
 
