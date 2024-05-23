@@ -290,29 +290,31 @@
         <h3>Ejercicio 9_Crea un formulario para elegir la talla y el color de una camiseta. </h3>
         <form id="ejercio9Formulario" class="was-validated">
             <p>Seleccione la cantidade de camisetas, zapatos y sombreros</p>
-
-            <select id="ej9camiseta" class="form-select">Seleccione la cantidad de camisetas
+            <p>Seleccione la cantidad de camisetas</p>
+            <select id="ej9camiseta" class="form-select">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="0">0</option>
             </select>
 
-            <select id="ej5zapatos" class="form-select">Seleccione la cantidad de zapatos
+            <p>Seleccione la cantidad de zapatos</p>
+            <select id="ej5zapatos" class="form-select">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="0">0</option>
             </select>
-
-            <select id="ej5sombreros" class="form-select">Seleccione la cantidad de sombreros
+            <p>Seleccione la cantidad de sombreros</p>
+            <select id="ej5sombreros" class="form-select">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="0">0</option>
             </select>
-
+            <button type="button" class="btn btn-success" onclick="mostrarProducto()">mostrar</button>
         </form>
+        <p id="respuesta9"></p>
 
         <h3>Ejercicio 10_Crea un formulario para que el usuario pueda introducir el nombre de su mascota, y seleccionar
             el tipo: perro, gato, tortuga, pajaro. </h3>
@@ -326,15 +328,17 @@
 
             </div>
 
-            <select id="ej5sombreros" class="form-select">Seleccione la cantidad de sombreros
-                <option value="notengo">No tengo Mascotas</option>
+            <select id="ej10mascota" class="form-select">
+                <option value="">No tengo Mascotas</option>
                 <option value="perro">Perro</option>
                 <option value="gato">Gato</option>
                 <option value="tortuga">Tortuga</option>
                 <option value="pajaro">Pájaro</option>
                 <option value="otro">Otro</option>
             </select>
+            <button type="button" class="btn btn-success" onclick="datosMascota()">Resultado</button>
         </form>
+        <p id="respuesta10"></p>
 
 
 

@@ -106,5 +106,31 @@ function mostrarMedia(){
 
 // EJERCICIO_9
 function mostrarProducto(){
+    let numCamiseta =  document.getElementById("ej9camiseta").value;
+    let numZapatos = document.getElementById("ej5zapatos").value;
+    let numSombreros = document.getElementById("ej5sombreros").value;
+
+    let camiseta = "Camiseta";
+    let zapatos = "Zapatos";
+    let sombreros = "Sombreros";
+
+    let mensaje = "El producto " +  camiseta + " hay " + numCamiseta + " unidades, el producto " +  zapatos + " hay " + numZapatos + " unidades y el producto " 
+    +  sombreros + " hay " + numSombreros + " unidades. "
+
+
+imprimir(mensaje, "respuesta9")
+}
+
+// EJERCICIO 10
+
+function datosMascota(){
+    let nombreMascota = document.getElementById("ej10texto").value;
+    let tipoMascota = document.getElementById("ej10mascota").value;
+
+    let mensaje = "Datos mascota: el nombre de la mascota es: " + nombreMascota +
+     " y el tipo de la mascota es: " + tipoMascota 
+
+    imprimir(mensaje, "respuesta10")
+
     
 }
