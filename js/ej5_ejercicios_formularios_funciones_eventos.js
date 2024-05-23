@@ -60,3 +60,51 @@ function elegirCamiseta(){
     imprimir(mensaje, "respuesta5");
 
 }
+
+// EJERCICIO_6
+function mostrarEdad(){
+    let edad = parseInt(document.getElementById("ej46Edad").value);
+    const diasAno = 365;
+    const horasDia = 24;
+    const minutosHora = 60;
+    const segundosMinuto = 60;
+
+    let dias = edad * diasAno;
+    let minutos = edad * horasDia* minutosHora;
+    let segundos = minutos* segundosMinuto;
+    let mensaje =  " Si tienes " + edad + " años" + " habrás vivido " + dias + " días o " + minutos + " minutos " + " o " + segundos + " segundos. "
+
+    imprimir(mensaje, "respuesta6");
+
+}
+
+//  EJERCICIO_7
+function mostrarTexto(){
+    let texto = document.getElementById("ej7Texto").value;
+    let mayuscula = texto.toUpperCase();
+    let primeraLetra = texto[0];
+    let longitud = texto.length;  
+    let ultimaLetra = texto[longitud -1];
+    
+    let mensaje = "El texto en mayuscula " + mayuscula + " la primera letra es " + primeraLetra + " su ultima letra es " + ultimaLetra + " su longitud es " + longitud;
+
+    imprimir(mensaje, "respuesta7");
+}
+
+// EJERCICIO_8
+function mostrarMedia(){
+    let nota1 = parseFloat(document.getElementById("ej8Numero1").value);
+    let nota2 = parseFloat(document.getElementById("ej8Numero2").value);
+    let nota3 = parseFloat(document.getElementById("ej8Numero3").value);
+
+    let notaTotal = nota1 + nota2 + nota3;
+    let media = notaTotal / 3;
+
+    let mensaje = "La media de las tres notas es " + media;
+    imprimir(mensaje, "respuesta8");
+}
+
+// EJERCICIO_9
+function mostrarProducto(){
+    
+}

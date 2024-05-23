@@ -243,7 +243,9 @@
                 <p class="valid-feedback">correcto</p>
                 <p class="invalid-feedback">La edad es obligatoria y debe ser positiva </p>
             </div>
+            <button type="button" class="btn btn-success" onclick="mostrarEdad()">Edad</button>
         </form>
+        <p id="respuesta6"></p>
 
         <h3>Ejercicio 7_Crea un formulario para mostrar información sobre un texto </h3>
         <p>Crea un elemento textArea que reciba un texto de longitud entre 10 y 100 caracteres. Debe ser obligatorio.
@@ -251,13 +253,14 @@
 
         <form id="ejercio7Formulario" class="was-validated">
             <div class="mb-3">
-                <input type="text" id="ej6texto" placeholder="Introduce el texto" required minlength="10"
+                <input type="text" id="ej7Texto" placeholder="Introduce el texto" required minlength="10"
                     maxlength="100" class="form-control">
                 <p class="valid-feedback">correcto</p>
-                <p class="invalid-feedback">El campo de texto es obligatorio y debe tener entre 10 a 100 caracteres.
-                </p>
+                <p class="invalid-feedback">El campo de texto es obligatorio y debe tener entre 10 a 100 caracteres.</p>
             </div>
+            <button type="button" class="btn btn-success" onclick="mostrarTexto()">respuesta</button>
         </form>
+        <p id="respuesta7"></p>
 
         <h3>Ejercicio 8_Crea un formulario para introducir dos numeros.</h3>
 
@@ -280,12 +283,13 @@
                 <p class="valid-feedback">correcto</p>
                 <p class="invalid-feedback">El campo es obligatorio y acepta solamente números entre 0 a 10</p>
             </div>
-
+            <button type="button" class="btn btn-success" onclick="mostrarMedia()">media</button>
         </form>
+        <p id="respuesta8"></p>
 
         <h3>Ejercicio 9_Crea un formulario para elegir la talla y el color de una camiseta. </h3>
         <form id="ejercio9Formulario" class="was-validated">
-            <p>Seleccione</p>
+            <p>Seleccione la cantidade de camisetas, zapatos y sombreros</p>
 
             <select id="ej9camiseta" class="form-select">Seleccione la cantidad de camisetas
                 <option value="1">1</option>
