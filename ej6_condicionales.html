@@ -75,6 +75,16 @@
     
     <div id="ejerciciosCondicionales" class="container mt-5">
         <h1>Ejercicios condicionales </h1>
+        <h3>Ejercicio 1_Crea un formulario para que el usuario introduzca su edad y vea un mensaje indicando si es mayor de edad o no.</h3>
+        <form id="ej1formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ejercicio1Numero" placeholder="Introduce la nota" required min="0" class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="mayorEdad()">Respuesta</button>
+        </form>
+        <p id="respuesta1"></p>
     </div>
     
 
