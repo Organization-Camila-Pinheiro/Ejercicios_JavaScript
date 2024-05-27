@@ -134,3 +134,14 @@ function datosMascota(){
 
     
 }
+// Otro ejemplo ejercicio 10
+
+function tuMascota(idNombreMascota, idTipoMascota) {
+    let nombreMascota = document.getElementById(idNombreMascota).value;
+    let tipoMascota = document.getElementById(idTipoMascota).value;
+    let mensaje = "RESULTADO\nTu mascota se llama " + nombreMascota;
+    if (tipoMascota !== "") {
+        mensaje += " y es un " + tipoMascota;
+    }
+    imprimir(mensaje, "eje10FormulariosResultado");
+}
