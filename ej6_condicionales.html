@@ -85,6 +85,110 @@
             <button type="button" class="btn btn-success" onclick="mayorEdad()">Respuesta</button>
         </form>
         <p id="respuesta1"></p>
+
+        <h3>Ejercicio 2_Crea un formulario que indique cual es el mayor de dos numeros.</h3>
+        <form id="ej2formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ejercicio2Numero1" placeholder="Introduce la nota" required min="0" class="form-control" >
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="ejercicio2Numero2" placeholder="Introduce la nota" required min="0" class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="compararValores()">Respuesta</button>
+        </form>
+        <p id="respuesta2"></p>
+
+        <h3>Ejercicio 3_Crea un formulario para que el usuario introduzca su nota y vea si esta aprobado o suspenso.</h3>
+        <form id="ej3formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ejercicio3Numero" placeholder="Introduce la nota" required min="0" max="10" class="form-control" step="0.01">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="verificarNotas()">Respuesta</button>
+        </form>
+        <p id="respuesta3"></p>
+
+        <h3>Ejercicio 4_Crea un formulario para que el usuario introduzca su nombre y le diga si es un nombre largo o corto.</h3>
+        <form id="ej4Formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="ej4exto" placeholder="Introduce el texto" required minlength="1"
+                    maxlength="100" class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo de texto es obligatorio </p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="textoLargoCorto()">respuesta</button>
+        </form>
+        <p id="respuesta4"></p>
+
+        <h3>Ejercicio 5_Crea un formulario para ver la estacion del año segun el mes introducido. </h3>
+        <form id="ej5Formulario" class="was-validated">
+
+            <select id="ej5estacion" class="form-select" style="max-width: 150px;" required>
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </select>
+            <button type="button" class="btn btn-success" onclick="estacion()">Concluir compra</button>
+        </form>
+        <p id="respuesta5"></p>
+
+        <h3>Ejercicio 6_ Crea una calculadora</h3>
+        <form id="ej6formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ejercicio6Numero1" placeholder="Nota 1" style="max-width: 150px;" required min="0" class="form-control" >
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="ejercicio6Numero2" placeholder="Nota 2" style="max-width: 150px;" required min="0" class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <select id="ej6calculo" class="form-select" style="max-width: 150px;" required>
+                <option value="suma">Sumar</option>
+                <option value="resta">Restar</option>
+                <option value="multiplicacion">Multiplicar</option>
+                <option value="division">Dividir</option>
+            </select>
+            <button type="button" class="btn btn-success" onclick="calculadora()">Respuesta</button>
+        </form>
+        <p id="respuesta6"></p>
+
+        <h3>Ejercicio 7_ Crea un formulario que muestre el precio final segun el producto y la forma de pago elegida.</h3>
+        <form id="ej7Formulario" class="was-validated">
+
+            <select id="ej7productos" class="form-select" style="max-width: 150px;" required>
+                <option value="camiseta">Camiseta - 10 euros</option>
+                <option value="sudadera">Sudadera - 20 euros</option>
+                <option value="bufanda">Bufanda - 5 euros</option>
+            </select>
+            <div class="mb-3">
+                <input type="number" id="ej7Numero" placeholder="Cantidad" style="max-width: 150px;" required min="1" class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+
+            <button type="button" class="btn btn-success" onclick="precioProducto()">Concluir compra</button>
+        </form>
+        <p id="respuesta7"></p>
+
+
+
+
     </div>
     
 
