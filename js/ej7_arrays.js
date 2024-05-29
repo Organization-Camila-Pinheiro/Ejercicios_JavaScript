@@ -73,14 +73,30 @@ function ordenarLista(){
     mostrarLista();
 }
 
-// EJEMPLO 8: 
-//EJEMPLO 7: ORDENAR LOS ELEMENTOS DE UNA LISTA  DE FORMA ALFABETICA z-a
+//EJEMPLO 8: ORDENAR LOS ELEMENTOS DE UNA LISTA  DE FORMA ALFABETICA z-a
 //Usamos la funcion sort().reverse()
 //usar minisculas porque usa el orden assci
+//arr.sort((a,b) => a - b) Ordenar de forma ascendente un array de numeros.
+//Descendente arr.sort((a, b) => a - b).reverse
 
 function ordenarListaZA(){
     listaCompra.sort().reverse();
     mostrarLista();
+}
+
+//EJEMPLO 9: OBTENER LA POSISCION DE UN ELEMENTO DE LA LISTA
+function posicionElemento(){
+    let elemento = document.getElementById("ej9posicion").value;
+    let posicion = listaCompra.indexOf(elemento);
+    let mensaje = "";
+
+    if(posicion !== -1){
+        mensaje = "elemento " + elemento + " esta en la posisicion " + posicion;
+    }
+    else{
+        mensaje = "Este elemento no se encuentra en la lista";
+    }
+    imprimir (mensaje, "listaResultado9")
 }
 
 

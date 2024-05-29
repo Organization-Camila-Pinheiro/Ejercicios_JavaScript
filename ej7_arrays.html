@@ -75,9 +75,67 @@
         <button type="button" class="btn btn-success" onclick="ordenarLista()">Ordenar Lista</button>
         <p id="listaResultado7"></p>
 
-        <h3>Ejemplo 8: Ordenar lista por orden alfabetica ASSCI</h3>
+        <h3>Ejemplo 8: Ordenar lista por orden alfabetica ASSCI de Z hasta A</h3>
         <button type="button" class="btn btn-success" onclick="ordenarListaZA()">Ordenar Lista de Z a A</button>
         <p id="listaResultado7"></p>
+
+        <h3>Ejemplo 9: Obtner la posicion de un elemento de la lista, y -1 si no se encuentra</h3>
+        <form id="ejemplo9formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="ej9posicion"placeholder="Introduce el elemento que quieres encontrar" required>
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="posicionElemento()">Modificar Lista</button>
+            <p id="listaResultado9"></p>
+        </form>
+
+
+    </div>
+
+    <div id="ejerciciosArrays" class="container mt-5">
+
+        <h3>Ejercicio 1: Agrega un boton mostrar alumnos, que al pulsarlo muestre una lista con los nombres de 10 alumnos.</h3>
+        <button type="button" class="btn btn-success" onclick="mostrarLista()">Modificar Lista</button>
+        <p id="respuesta1"></p>
+
+        <h3>Ejemplo 2: Muestra el nombre del alumno de la posicion que elijas</h3>
+        <form id="ejercicio2Formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ej2posicion"placeholder="Elija un numero" required min="0" max="10">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="nombreAlumno()">Mostrar nombre</button>
+        </form>
+        <p id="respuesta2"></p>
+
+        <h3>Ejercicio 3: Agrega un boton mostrar alumnos ordenados, que muestre los alumnos ordenados por nombre.</h3>
+        <button type="button" class="btn btn-success" onclick="ordenarNombre()">Modificar Lista</button>
+        <p id="respuesta3"></p>
+
+        <h3>Ejercicio 4: Agrega una nueva opcion para agregar un nuevo alumno.</h3>
+        <form id="ejercicio4Formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="ej4nombre"placeholder="Introduce el nombre que quieres agregar" required >
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="agregarAlumno()">Agregar Alumno</button>
+        </form>
+        <p id="respuesta4"></p>
+
+        <h4> Ejercicio 5: Agrega una opcion para eliminar un alumno de una posicion elegida.</h4>
+        <form id="ejercicio5Formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ej5posicion"placeholder="Elija un numero" required min="1" max="501">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="eliminarAlumnoElegido()">Eliminar</button>
+        </form>
+        <p id="respuesta5"></p>
+
 
 
     </div>
