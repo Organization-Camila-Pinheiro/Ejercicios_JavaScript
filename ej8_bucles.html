@@ -16,14 +16,55 @@
         <p><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Looping_code">Bucles en Javascript</a></p>
     </div>
     <div id="ejemplo1bubles" class="container mt-5">
-        <h3>Ejemplo1: Repetir la misma frase 10 veces</h3>
-        <p id="ejemplo1solucion"></p>
+        <h3>Ejemplo 1: Repetir la misma frase 10 veces</h3>
+        
         <button type="button" class="btn btn-success" onclick="mostrarFrase()">Mostrar Frase</button>
+        <p id="e1solucion"></p>
        
+        <h3>Ejemplo 2: Mostrar el doble</h3>
+        <button type="button" class="btn btn-success" onclick="mostrarElDoble()">Mostrar los multiplos de 2</button>
+        <p id="e2solucion"></p>
+
+        <h3>Ejemplo 3: Mostrar la tabla de multiplicar de un numero</h3>
+            <div class="mb-3">
+                <input type="number" id="e2multiplicar"placeholder="Introduce el elemento del que quieres ver la tabla" required min="0">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+        <button type="button" class="btn btn-success" onclick="tablaMultiplicacion()">Mostrar a tabla</button>
+        <p id="e3solucion"></p>
+
+        <h3>Ejemplo 4: Mostrar uma lista de nombres en minuscula excepto "bruno</h3>
+        
+        <button type="button" class="btn btn-success" onclick="listaMinuscula()">Mostrar Frase</button>
+        <p id="e4solucion"></p>
+
+        <h3>Ejemplo 5: Mostrar el resultado de sumar todos los elementos de una lista. Si el elemento es menor a 5, no se invluye en la lista</h3>
+        
+        <button type="button" class="btn btn-success" onclick="listaMayuscula()">Mostrar Frase</button>
+        <p id="e5solucion"></p>
+       
+    
+    </div>
+    <div id="ejerciciosBucles" class="container mt-5">
+        <h1>Ejercicios Bucles </h1>
+        <h3>Ejercicio 1_ Muestra la suma de todos los numeros desde el 0 hasta el introducido por el usuario.</h3>
+        <form id="ej1formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ej1numero" placeholder="Introduce la nota" required min="1" class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="mostrarNumeros()">Respuesta</button>
+        </form>
+        <p id="resultado1"></p>
+
+
     </div>
     <br>
 
     <script src="js/ej8_bucles.js"></script>
+    <script src="js/ej8_ejercicios_bucles.js"></script>
 </body>
 
 </html>
