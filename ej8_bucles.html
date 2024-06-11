@@ -13,51 +13,143 @@
 
     <div class="p-5 bg-dark text-white text-center">
         <h1>Bootcamp QA: Bucles en Javascript</h1>
-        <p><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Looping_code">Bucles en Javascript</a></p>
+        <p><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Looping_code">Bucles en
+                Javascript</a></p>
     </div>
     <div id="ejemplo1bubles" class="container mt-5">
         <h3>Ejemplo 1: Repetir la misma frase 10 veces</h3>
-        
+
         <button type="button" class="btn btn-success" onclick="mostrarFrase()">Mostrar Frase</button>
         <p id="e1solucion"></p>
-       
+
         <h3>Ejemplo 2: Mostrar el doble</h3>
         <button type="button" class="btn btn-success" onclick="mostrarElDoble()">Mostrar los multiplos de 2</button>
         <p id="e2solucion"></p>
 
         <h3>Ejemplo 3: Mostrar la tabla de multiplicar de un numero</h3>
-            <div class="mb-3">
-                <input type="number" id="e2multiplicar"placeholder="Introduce el elemento del que quieres ver la tabla" required min="0">
-                <p class="valid-feedback">correcto</p>
-                <p class="invalid-feedback">El campo es obligatorio</p>
-            </div>
+        <div class="mb-3">
+            <input type="number" id="e2multiplicar" placeholder="Introduce el elemento del que quieres ver la tabla"
+                required min="0">
+            <p class="valid-feedback">correcto</p>
+            <p class="invalid-feedback">El campo es obligatorio</p>
+        </div>
         <button type="button" class="btn btn-success" onclick="tablaMultiplicacion()">Mostrar a tabla</button>
         <p id="e3solucion"></p>
 
         <h3>Ejemplo 4: Mostrar uma lista de nombres en minuscula excepto "bruno</h3>
-        
         <button type="button" class="btn btn-success" onclick="listaMinuscula()">Mostrar Frase</button>
         <p id="e4solucion"></p>
 
-        <h3>Ejemplo 5: Mostrar el resultado de sumar todos los elementos de una lista. Si el elemento es menor a 5, no se invluye en la lista</h3>
-        
-        <button type="button" class="btn btn-success" onclick="listaMayuscula()">Mostrar Frase</button>
+        <h3>Ejemplo 5: Mostrar el resultado de sumar todos los elementos de una lista. Si el elemento es menor a 5, no
+            se invluye en la lista</h3>
+        <form id="ejemplo5" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="e5numeroLista" placeholder="Introduce el elemento del que quieres ver la tabla"
+                    required min="0">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="agregarNumero()">Agregar numero</button>
+            <button type="button" class="btn btn-success" onclick="sumarMenores5()">Mostrar resultado suma de los mayores a
+            5</button>
+        </form>
+        <p id="e5solucionLista"></p>
         <p id="e5solucion"></p>
-       
-    
+
+
     </div>
     <div id="ejerciciosBucles" class="container mt-5">
         <h1>Ejercicios Bucles </h1>
         <h3>Ejercicio 1_ Muestra la suma de todos los numeros desde el 0 hasta el introducido por el usuario.</h3>
         <form id="ej1formulario" class="was-validated">
             <div class="mb-3">
-                <input type="number" id="ej1numero" placeholder="Introduce la nota" required min="1" class="form-control">
+                <input type="number" id="ej1numero" placeholder="Introduce la nota" required min="1"
+                    class="form-control">
                 <p class="valid-feedback">correcto</p>
                 <p class="invalid-feedback">El campo es obligatorio</p>
             </div>
             <button type="button" class="btn btn-success" onclick="mostrarNumeros()">Respuesta</button>
         </form>
         <p id="resultado1"></p>
+
+        <h1>Ejercicio 2_ Muestra una palabra el nuemro de veces que indique el usuario</h1>
+        <form id="ej2Formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="ej2palabra" placeholder="Introduce la palabra" required minlength="2"
+                    maxlength="100" class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo de texto es obligatorio.</p>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="ej2numero" placeholder="Introduce el numero de veces" required min="1">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="mostrarPalabra()">respuesta</button>
+        </form>
+        <p id="respuesta2"></p>
+
+        <h1>Ejercicio 3_ Muestra AMAPOLA o MARGARITA el numero de veces que indique el usuario, segun la palabra introducida </h1>
+        <form id="ej3Formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="ej3palabra" placeholder="Introduce la palabra" required minlength="2"
+                    maxlength="100" class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo de texto es obligatorio.</p>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="ej3numero" placeholder="Introduce el numero de veces" required min="1">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="mostrarNombre()">respuesta</button>
+        </form>
+        <p id="respuesta3"></p>
+
+        <h1>Ejercicio 4_ Muestra todos los numeros pares desde el 0 hasta el indicado por el usuario.</h1>
+        <form id="ej4Formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ej4numero" placeholder="Introduce el numero " required min="1">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="numerosPares()">respuesta</button>
+            <p id="respuesta4"></p>
+        </form>
+
+        <h1>Ejercicio 5_ Muestra todos los numeros pares desde el 0 hasta el indicado por el usuario.</h1>
+        <form id="ej5Formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="ej5nombres" placeholder="Introduce el nombre " required minlength="3">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="agregarNombre()">Agregar Nombre</button>
+            <p id="respuesta5nombre"></p>
+            <button type="button" class="btn btn-success" onclick="mostrarLista()">Mostrar lista Mayuscula</button>
+            <p id="respuesta5lista"></p>
+            <button type="button" class="btn btn-success" onclick="nombresLetraA()">Nombres con la letra A</button>
+            <p id="respuesta5letra"></p>
+        </form>
+
+        <h1>Ejercicio 6_ Crea un programa para sumar todos los numeros de una lista.</h1>
+        <form id="ej6Formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ej6numero" placeholder="Introduce la nota " required min="0">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="agregarNotas()">Agregar Notas</button>
+            <p id="respuesta5notas"></p>
+            <button type="button" class="btn btn-success" onclick="sumaNotas()">Suma de las notas</button>
+            <p id="respuesta6lista"></p>
+            <button type="button" class="btn btn-success" onclick="notaMedia()">Media</button>
+            <p id="respuesta6media"></p>
+            <button type="button" class="btn btn-success" onclick="resultadoFinal()">Resultado Final</button>
+            <p id="respuesta6"></p>
+        </form>
+
+
 
 
     </div>
